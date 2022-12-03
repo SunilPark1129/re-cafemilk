@@ -129,7 +129,7 @@ const Rewards = () => {
           </StyledRewardsMainTextBox>
         </StyledRewardsMainSection>
         <StyledRewardsMainSection>
-          <h3>Group Benefits</h3>
+          <h3>GROUP</h3>
           <StyledRewardsMainImage
             src={groupImg}
             alt="people are communicating at the table"
