@@ -1,0 +1,152 @@
+{
+    "coffee": [{
+            "name": "Coffee",
+            "calories": 5,
+            "milk": false,
+            "description": "It is served by mixing coffee and hot/iced water. Start and end your day with coffee. If you would like it sweeter, please tell the staff.",
+            "price": 1.25
+        },
+        {
+            "name": "Americano",
+            "calories": 15,
+            "milk": false,
+            "description": "It is served by mixing espresso and hot/iced water. If you have a busy day, how about taking a break while drinking an Americano?",
+            "price": 2.25
+        },
+        {
+            "name": "Latte",
+            "calories": 190,
+            "milk": true,
+            "description": "It is served by mixing espresso and steamed/iced milk with sugar. Enjoy the day calmly with a latte.",
+            "price": 3.25
+        },
+        {
+            "name": "Mocha",
+            "calories": 370,
+            "milk": true,
+            "description": "It is served by mixing espresso, chocolate and steamed/iced milk. Enjoy the sweetness of espresso and chocolate.",
+            "price": 3.75
+        },
+        {
+            "name": "Espresso",
+            "calories": 10,
+            "milk": false,
+            "description": "It is served by mixing solo espresso and a small cup of hot/iced water. Enjoy the bitter taste of traditional espresso.",
+            "price": 1.25
+        },
+        {
+            "name": "Cappuccino",
+            "calories": 190,
+            "milk": true,
+            "description": "It is served by mixing espresso and steamed/iced milk with sugar. The soft foam of the cappuccino will calm your mind.",
+            "price": 3.25
+        }
+    ],
+    "tea": [{
+            "name": "GreenTea",
+            "calories": 200,
+            "milk": true,
+            "description": "It is served by mixing GreenTea and steamed/iced milk. This is the drink most ordered by customers. It's a choice you won't regret.",
+            "price": 4.25
+        },
+        {
+            "name": "MilkTea",
+            "calories": 145,
+            "milk": false,
+            "description": "It is served by mixing black tea and hot/iced water. If your day is boring, drink milk tea to solve your problems. If you would like it sweeter, please tell the staff.",
+            "price": 4.25
+        },
+        {
+            "name": "Iced Mango",
+            "calories": 180,
+            "milk": false,
+            "description": "It is served by mixing fresh mango and iced water. Do you like sour taste? Then you have chosen well.",
+            "price": 4.25
+        },
+        {
+            "name": "Iced Peach",
+            "calories": 70,
+            "milk": false,
+            "description": "It is served by mixing fresh peach and iced water. Feel the unique aroma and taste that only peaches can produce.",
+            "price": 4.25
+        },
+        {
+            "name": "Iced Orange",
+            "calories": 110,
+            "milk": false,
+            "description": "It is served by mixing fresh orange and iced water. A sour orange is always right. We recommend it to anyone who likes sour taste.",
+            "price": 4.25
+        }
+    ],
+    "smoothie": [{
+            "name": "Chocolate",
+            "calories": 480,
+            "milk": true,
+            "description": "It is served by mixing sweet chocolate and iced milk. Enjoy the sweetness of chocolate. Don't worry, it's moderately sweet.",
+            "price": 4.5
+        },
+        {
+            "name": "Strawberry",
+            "calories": 380,
+            "milk": false,
+            "description": "It is served by mixing fresh strawberry and iced water. Are you looking for something refreshing and sweet? We have a strawberry smoothie.",
+            "price": 4.5
+        },
+        {
+            "name": "Pistachio",
+            "calories": 420,
+            "milk": true,
+            "description": "It is served by mixing chopped nuts and iced milk. We cut it into small pieces and made our own powder, so you can taste the good quality.",
+            "price": 4.5
+        },
+        {
+            "name": "GreenTea",
+            "calories": 420,
+            "milk": true,
+            "description": "It is served by mixing green tea and iced milk. Green tea smoothie loved by our customers the most.",
+            "price": 4.5
+        },
+        {
+            "name": "Green Apple",
+            "calories": 420,
+            "milk": false,
+            "description": "It is served by mixing green apple and iced. If you want a fresh and new feeling, choose this drink.",
+            "price": 4.5
+        },
+        {
+            "name": "Taro",
+            "calories": 420,
+            "milk": true,
+            "description": "It is served by mixing taro and iced milk. You haven't tried tarot yet? Taro can be called the origin of smoothies. Try it today.",
+            "price": 4.5
+        },
+        {
+            "name": "Mango",
+            "calories": 320,
+            "milk": false,
+            "description": "It is served by mixing fresh mango and iced water. Mango won't make you regret it. Make wise choices.",
+            "price": 4.5
+        },
+        {
+            "name": "Kiwi",
+            "calories": 300,
+            "milk": false,
+            "description": "It is served by mixing fresh kiwi and iced water. Isn't kiwi the representative of sour taste among fruits? Recommended for those who like sour taste.",
+            "price": 4.5
+        },
+        {
+            "name": "Blueberry",
+            "calories": 340,
+            "milk": false,
+            "description": "It is served by mixing fresh blueberry and iced water. We grind our own blueberries instead of powder to ensure better aroma and taste.",
+            "price": 4.5
+        },
+        {
+            "name": "Watermelon",
+            "calories": 350,
+            "milk": false,
+            "description": "It is served by mixing fresh watermelon and iced water. How about a refreshing day with watermelon? Spend the day with a moderate sweetness and refreshing taste.",
+            "price": 4.5
+        }
+    ]
+}

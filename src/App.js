@@ -1,24 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import { ThemeProvider } from "styled-components";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { GlobalStyles } from "./components/styles/Global";
+import "./font.css";
+import { defaultValue } from "./components/Theme";
+import Navbar from "./components/Navbar";
+import Home from "./pages/Home/Home";
+import Menu from "./pages/Menu/Menu";
+import Rewards from "./pages/Rewards/Rewards";
+import Footer from "./components/Footer";
+import { StyledContainer } from "./components/styles/Container.styled";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={defaultValue}>
+      <GlobalStyles />
+      <Router>
+        <Navbar />
+        <StyledContainer>
+          <Routes>
+            <Route exact path="/" element={<Home />} />
+            <Route exact path="/menu" element={<Menu />} />
+            <Route exact path="/rewards" element={<Rewards />} />
+          </Routes>
+        </StyledContainer>
+        <Footer />
+      </Router>
+    </ThemeProvider>
   );
 }
 
