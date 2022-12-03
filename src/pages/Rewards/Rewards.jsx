@@ -23,6 +23,7 @@ import birthdayImg from "../../assets/rewards_birthday.jpg";
 import groupImg from "../../assets/rewards_group.jpg";
 
 const Rewards = () => {
+  window.scrollTo(0, 0);
   return (
     <StyledRewards>
       <StyledRewardsHeader>
