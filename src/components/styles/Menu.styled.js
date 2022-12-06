@@ -47,14 +47,14 @@ export const StyledMenuAsideFilter = styled.div `
 
   button {
     border: none;
-    margin-right: auto;
+    /* margin-right: auto; */
     font-size: 1em;
     font-weight: bold;
     padding: 0.2rem 0.5rem;
     border-radius: 0.2rem;
     color: ${({ theme }) => theme.colors.btnFont};
     cursor: pointer;
-    transition-property: background-color, color, transform;
+    transition-property: background-color, color;
     transition-timing-function: ease-in-out;
     transition-duration: 0.3s;
 
@@ -62,10 +62,6 @@ export const StyledMenuAsideFilter = styled.div `
     &.isActive {
       color: white;
       background-color: ${({ theme }) => theme.colors.main};
-    }
-
-    &.isActive {
-      transform: translateX(2rem);
     }
   }
 
@@ -77,11 +73,7 @@ export const StyledMenuAsideFilter = styled.div `
     }
     button {
       margin: 0;
-      transition-duration: 0.3s, 0.3s, 0s;
-
-      &.isActive {
-        transform: none;
-      }
+      transition-duration: 0.3s, 0.3s;
     }
   }
 `;
