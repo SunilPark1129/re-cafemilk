@@ -10,10 +10,13 @@ import { lists } from "../../data/data";
 import Content from "./Content";
 import {
   StyledMenuMain,
+  StyledMenuSection,
   StyledMenuCategory,
   StyledMenuItem,
+  StyledMenuImage,
   StyledMenuBackground,
   StyledMenuMainArrayEmpty,
+  StyledMenuMargin,
 } from "../../components/styles/Menu.styled";
 
 const Main = ({ menu }) => {
@@ -70,23 +73,26 @@ const Main = ({ menu }) => {
         ) : (
           Object.getOwnPropertyNames(data).map((arr, idx) => {
             return (
-              <StyledMenuCategory key={arr}>
-                <>
-                  {menu[idx].length !== 0 ? <h3>{arr.toUpperCase()}</h3> : null}
+              <StyledMenuSection key={arr}>
+                {menu[idx].length !== 0 ? <h3>{arr.toUpperCase()}</h3> : null}
+                <StyledMenuCategory>
                   {menu[idx].map((item) => {
                     return (
                       <StyledMenuItem
                         key={item.name}
                         onClick={() => setSelectedItem(item)}
                       >
-                        <img src={item.image} alt={item.name} />
+                        <StyledMenuImage>
+                          <img src={item.image} alt={item.name} />
+                        </StyledMenuImage>
                         <p>{item.name}</p>
                         <StyledMenuBackground />
                       </StyledMenuItem>
                     );
                   })}
-                </>
-              </StyledMenuCategory>
+                  <StyledMenuMargin></StyledMenuMargin>
+                </StyledMenuCategory>
+              </StyledMenuSection>
             );
           })
         )

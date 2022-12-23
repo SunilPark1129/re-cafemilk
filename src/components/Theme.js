@@ -3,7 +3,7 @@ export const defaultValue = {
         light: "#EDF2F4",
         dark: "#252422",
         main: "#de8e3f",
-        mild: "rgb(202, 202, 202)",
+        mild: "#c0a49c",
         darkFont: "#332B25",
         btnFont: "#877A6E",
         shadow: "rgba(39, 39, 39, 0.623)",

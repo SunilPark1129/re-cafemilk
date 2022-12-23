@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const StyledMenu = styled.main `
+export const StyledMenu = styled.main`
   display: flex;
   gap: 1rem;
 
@@ -9,12 +9,11 @@ export const StyledMenu = styled.main `
   }
 `;
 
-export const StyledMenuAside = styled.aside `
+export const StyledMenuAside = styled.aside`
   display: flex;
   flex-direction: column;
   flex: 1 1 10%;
   padding: 1em;
-  box-shadow: 10px 0px 5px -5px ${({ theme }) => theme.colors.shadow};
   gap: 2rem;
 
   h3 {
@@ -22,15 +21,16 @@ export const StyledMenuAside = styled.aside `
   }
 
   @media (max-width: ${({ theme }) => theme.tablet}) {
-    box-shadow: none;
-    box-shadow: 0px 10px 5px 5px ${({ theme }) => theme.colors.shadow};
+    gap: 1rem;
     h3 {
-      display: none;
+      padding: 0;
+      text-align: center;
+      /* display: none; */
     }
   }
 `;
 
-export const StyledMenuAsideSection = styled.section `
+export const StyledMenuAsideSection = styled.section`
   display: flex;
   flex-direction: column;
   gap: 3rem;
@@ -40,14 +40,13 @@ export const StyledMenuAsideSection = styled.section `
   }
 `;
 
-export const StyledMenuAsideFilter = styled.div `
+export const StyledMenuAsideFilter = styled.div`
   display: flex;
   flex-direction: column;
   gap: 0.5em;
 
   button {
     border: none;
-    /* margin-right: auto; */
     font-size: 1em;
     font-weight: bold;
     padding: 0.2rem 0.5rem;
@@ -61,7 +60,7 @@ export const StyledMenuAsideFilter = styled.div `
     &:hover,
     &.isActive {
       color: white;
-      background-color: ${({ theme }) => theme.colors.main};
+      background-color: ${({ theme }) => theme.colors.mild};
     }
   }
 
@@ -78,110 +77,118 @@ export const StyledMenuAsideFilter = styled.div `
   }
 `;
 
-export const StyledMenuMain = styled.main `
+export const StyledMenuMain = styled.main`
   display: flex;
   flex-direction: column;
   flex: 1 1 70%;
-  padding: 1rem;
+  padding: 2rem 1rem;
   margin-bottom: 2rem;
   min-height: 100vh;
+  gap: 3em;
 
   @media (max-width: ${({ theme }) => theme.tablet}) {
-    padding: 0;
+    padding: 1rem 0;
   }
 `;
 
-export const StyledMenuCategory = styled.section `
-  display: flex;
-  flex-wrap: wrap;
-
-  h3 {
-    flex: 1 1 100%;
-    padding: 1em;
-    font-size: 1em;
-    border-bottom: 2px solid ${({ theme }) => theme.colors.main};
-  }
-`;
-
-export const StyledMenuItem = styled.article `
+export const StyledMenuSection = styled.section`
   display: flex;
   flex-direction: column;
-  align-items: center;
-  flex: 0 0 19%;
-  padding-bottom: 20%;
-  position: relative;
-  cursor: pointer;
-  margin: 3%;
+  gap: 1em;
 
-  p {
-    position: absolute;
-    top: 100%;
-    padding: 0.5rem;
-    font-size: 1em;
-    color: ${({ theme }) => theme.colors.fontDark};
-    font-weight: bold;
+  > h3 {
+    font-size: 1.3em;
+    border-bottom: 1px dotted ${({ theme }) => theme.colors.shadow};
+    position: relative;
   }
+`;
+
+export const StyledMenuCategory = styled.section`
+  display: flex;
+  flex-wrap: wrap;
+`;
+
+export const StyledMenuImage = styled.div`
+  display: flex;
+  height: 5em;
+  width: 5em;
+  overflow: hidden;
+  border-radius: 50%;
+  justify-content: center;
+  background-color: #c0a49c;
 
   img {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    max-width: 200px;
-    width: 80%;
+    height: 130%;
     object-fit: cover;
-    transition: 0.3s width;
+
+    transition-property: height;
+    transition-duration: 0.3s;
+  }
+`;
+
+export const StyledMenuItem = styled.article`
+  flex: 1 1 40%;
+  height: 8em;
+  display: flex;
+  align-items: center;
+  padding: 1em;
+  gap: 2em;
+  border-radius: 0.5em;
+  cursor: pointer;
+
+  p {
+    font-weight: bold;
   }
 
   &:hover {
     outline: 1px solid ${({ theme }) => theme.colors.mild};
-    border-radius: 1rem;
 
-    p {
-      color: ${({ theme }) => theme.colors.main};
+    ${StyledMenuImage} {
+      img {
+        height: 100%;
+      }
     }
-
     > div {
-      width: 40%;
-      padding-bottom: 40%;
+      /* width: 40%;
+      padding-bottom: 40%; */
     }
   }
 
   @media (max-width: ${({ theme }) => theme.tablet}) {
-    margin-bottom: 3rem;
+    /* margin-bottom: 3rem; */
   }
 
   @media (max-width: ${({ theme }) => theme.mobile}) {
-    flex: 0 0 27.3%;
+    flex: 0 0 100%;
   }
 `;
 
-export const StyledMenuImageBox = styled.div `
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
+export const StyledMenuMargin = styled.div`
+  flex: 1 1 40%;
 `;
 
-export const StyledMenuBackground = styled.div `
-  position: absolute;
+export const StyledMenuImageBox = styled.div`
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%; */
+`;
+
+export const StyledMenuBackground = styled.div`
+  /* position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  background-color: ${({ theme }) => theme.colors.main};
-  background: linear-gradient(
-    to top,
-    ${({ theme }) => theme.colors.light} 10%,
-    ${({ theme }) => theme.colors.main} 90%
-  );
-  width: 80%;
-  padding-bottom: 80%;
+
+  width: 100%;
+  padding-bottom: 100%;
   z-index: -1;
-  border-radius: 1rem;
+  border-radius: 1em;
   transition-property: width, padding;
-  transition-duration: 0.3s;
+  transition-duration: 0.3s; */
 `;
 
-export const StyledMenuMainArrayEmpty = styled.div `
+export const StyledMenuMainArrayEmpty = styled.div`
   width: 100%;
   margin: auto;
   display: flex;
