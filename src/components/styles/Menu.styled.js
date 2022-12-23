@@ -25,7 +25,6 @@ export const StyledMenuAside = styled.aside`
     h3 {
       padding: 0;
       text-align: center;
-      /* display: none; */
     }
   }
 `;
@@ -148,14 +147,6 @@ export const StyledMenuItem = styled.article`
         height: 100%;
       }
     }
-    > div {
-      /* width: 40%;
-      padding-bottom: 40%; */
-    }
-  }
-
-  @media (max-width: ${({ theme }) => theme.tablet}) {
-    /* margin-bottom: 3rem; */
   }
 
   @media (max-width: ${({ theme }) => theme.mobile}) {
@@ -165,27 +156,6 @@ export const StyledMenuItem = styled.article`
 
 export const StyledMenuMargin = styled.div`
   flex: 1 1 40%;
-`;
-
-export const StyledMenuImageBox = styled.div`
-  /* display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%; */
-`;
-
-export const StyledMenuBackground = styled.div`
-  /* position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-
-  width: 100%;
-  padding-bottom: 100%;
-  z-index: -1;
-  border-radius: 1em;
-  transition-property: width, padding;
-  transition-duration: 0.3s; */
 `;
 
 export const StyledMenuMainArrayEmpty = styled.div`
