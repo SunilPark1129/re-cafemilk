@@ -14,7 +14,6 @@ import {
   StyledMenuCategory,
   StyledMenuItem,
   StyledMenuImage,
-  StyledMenuBackground,
   StyledMenuMainArrayEmpty,
   StyledMenuMargin,
 } from "../../components/styles/Menu.styled";
@@ -86,7 +85,6 @@ const Main = ({ menu }) => {
                           <img src={item.image} alt={item.name} />
                         </StyledMenuImage>
                         <p>{item.name}</p>
-                        <StyledMenuBackground />
                       </StyledMenuItem>
                     );
                   })}
