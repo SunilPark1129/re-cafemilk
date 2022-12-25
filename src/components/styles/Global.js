@@ -7,18 +7,16 @@ export const GlobalStyles = createGlobalStyle `
     padding: 0;
     
     &::-webkit-scrollbar {
-      width: .5rem;
-      height: .5rem;
+      width: .3rem;
+      height: .3rem;
     }
      
     &::-webkit-scrollbar-track {
         background-color:${({ theme }) => theme.colors.light};
-        box-shadow: inset 0 0 6px ${({ theme }) => theme.colors.main};
     }
     
     &::-webkit-scrollbar-thumb {
-        background-color: ${({ theme }) => theme.colors.main};
-        box-shadow: inset 0 0 6px ${({ theme }) => theme.colors.reversedClr};
+        background-color: ${({ theme }) => theme.colors.mild};
     }
 }
 
