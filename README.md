@@ -27,7 +27,7 @@ Go to website - [Link](https://sp-cafemilk.netlify.app)
 ## Installation
 1. Clone the repo
 ```
-git clone https://github.com/SunilPark1129/re-spotless.git
+git clone https://github.com/SunilPark1129/re-cafemilk.git
 ```
 2. Install all dependencies
 ```
