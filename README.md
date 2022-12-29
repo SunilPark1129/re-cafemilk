@@ -42,7 +42,7 @@ npm start
 
 ## Self-improvement
 > In the past, while creating a website, I took note of the parts that could be improved or that were difficult at the time to develop the website.
-So I updated the old website with reference to this note for self-development. My Old Site - [Link](https://github.com/SunilPark1129/spotless)
+So I updated the old website with reference to this note for self-development. My Old Site - [Link](https://github.com/SunilPark1129/cafe-milk)
 
 - [x] I had trouble deciding on a class name. I feel the need to further consider and improve naming practices.
   - Elements are written with related names to indicate what they mean. I've been studying a lot, but I think I still need to study more.
