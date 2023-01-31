@@ -95,10 +95,10 @@ export const StyledMenuSection = styled.section`
   flex-direction: column;
   gap: 1em;
 
-  > h3 {
+  > h1 {
     font-size: 1.3em;
-    border-bottom: 1px dotted ${({ theme }) => theme.colors.shadow};
     position: relative;
+    color: ${({ theme }) => theme.colors.darkFont};
   }
 `;
 

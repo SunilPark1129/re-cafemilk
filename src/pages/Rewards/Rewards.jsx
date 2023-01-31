@@ -31,7 +31,7 @@ const Rewards = () => {
       </StyledRewardsHeader>
       <StyledRewardsMain>
         <StyledRewardsMainSection>
-          <h3>THANK YOU</h3>
+          <h1>THANK YOU</h1>
           <StyledRewardsMainTextBox>
             <p>
               Thank you for visiting our cafe. For you, our cafe has prepared a
@@ -43,7 +43,7 @@ const Rewards = () => {
           </StyledRewardsMainTextBox>
         </StyledRewardsMainSection>
         <StyledRewardsMainSection>
-          <h3>STAMP CARD</h3>
+          <h1>STAMP CARD</h1>
           <StyledRewardsCouponImageBox>
             <img src={icedOrange} alt="icedOrange" />
             <p>&#10137;</p>
@@ -110,7 +110,7 @@ const Rewards = () => {
           </StyledRewardsMainTextBox>
         </StyledRewardsMainSection>
         <StyledRewardsMainSection>
-          <h3>BIRTHDAY</h3>
+          <h1>BIRTHDAY</h1>
           <StyledRewardsMainImage
             src={birthdayImg}
             alt="woman is drinking a coffee"
@@ -130,7 +130,7 @@ const Rewards = () => {
           </StyledRewardsMainTextBox>
         </StyledRewardsMainSection>
         <StyledRewardsMainSection>
-          <h3>GROUP</h3>
+          <h1>GROUP</h1>
           <StyledRewardsMainImage
             src={groupImg}
             alt="people are communicating at the table"

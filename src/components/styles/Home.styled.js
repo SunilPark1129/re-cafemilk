@@ -1,12 +1,12 @@
 import styled, { keyframes } from "styled-components";
 
-export const StyledHome = styled.main `
+export const StyledHome = styled.main`
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
 `;
 
-export const StyledHomeHeader = styled.header `
+export const StyledHomeHeader = styled.header`
   flex: 1 1 100%;
   z-index: -1;
   img {
@@ -16,7 +16,7 @@ export const StyledHomeHeader = styled.header `
   }
 `;
 
-export const StyledHomeSection = styled.section `
+export const StyledHomeSection = styled.section`
   display: flex;
   height: 30rem;
   flex: 1 1 100%;
@@ -44,7 +44,7 @@ export const StyledHomeSection = styled.section `
   }
 `;
 
-const starAni = keyframes `
+const starAni = keyframes`
   0% {
     color: ${({ theme }) => theme.colors.main};
     transform: translateY(0);
@@ -67,7 +67,7 @@ const starAni = keyframes `
   }
 `;
 
-export const StyledHomeText = styled.article `
+export const StyledHomeText = styled.article`
   display: flex;
   flex-direction: column;
   flex: 1 1 40%;
@@ -81,7 +81,7 @@ export const StyledHomeText = styled.article `
     align-items: center;
   }
 
-  h3 {
+  h1 {
     text-decoration: underline;
     text-decoration-color: ${({ theme }) => theme.colors.main};
     text-decoration-thickness: 0.2rem;
@@ -109,7 +109,7 @@ export const StyledHomeText = styled.article `
   }
 `;
 
-export const StyledHomeImage = styled.div `
+export const StyledHomeImage = styled.div`
   flex: 1 1 60%;
   img {
     width: 100%;

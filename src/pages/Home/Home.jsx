@@ -90,7 +90,7 @@ const Home = () => {
             <StyledHomeSection key={header}>
               <StyledHomeText>
                 <div ref={target}>
-                  <h3>{header}</h3>
+                  <h1>{header}</h1>
                   <span className={isVisible ? "visible" : ""}>
                     <FontAwesomeIcon icon={faStar} />
                   </span>

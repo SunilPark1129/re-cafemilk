@@ -1,12 +1,12 @@
 import styled from "styled-components";
 import logo from "../../assets/logo.png";
 
-export const StyledRewards = styled.main `
+export const StyledRewards = styled.main`
   display: flex;
   flex-direction: column;
 `;
 
-export const StyledRewardsHeader = styled.header `
+export const StyledRewardsHeader = styled.header`
   z-index: -1;
   img {
     width: 100%;
@@ -15,12 +15,12 @@ export const StyledRewardsHeader = styled.header `
   }
 `;
 
-export const StyledRewardsMain = styled.main `
+export const StyledRewardsMain = styled.main`
   display: flex;
   flex-direction: column;
 `;
 
-export const StyledRewardsMainSection = styled.section `
+export const StyledRewardsMainSection = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -28,9 +28,10 @@ export const StyledRewardsMainSection = styled.section `
   padding: 3rem 0;
   border-bottom: 1px dotted ${({ theme }) => theme.colors.mild};
 
-  h3 {
+  h1 {
     margin: auto;
     border-bottom: 2px solid ${({ theme }) => theme.colors.main};
+    font-size: 1.2em;
   }
 
   span {
@@ -38,7 +39,7 @@ export const StyledRewardsMainSection = styled.section `
   }
 `;
 
-export const StyledRewardsMainTextBox = styled.div `
+export const StyledRewardsMainTextBox = styled.div`
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -46,7 +47,7 @@ export const StyledRewardsMainTextBox = styled.div `
   width: 100%;
 `;
 
-export const StyledRewardsMainImage = styled.img `
+export const StyledRewardsMainImage = styled.img`
   max-width: 70rem;
   width: 100%;
   height: 20rem;
@@ -55,7 +56,7 @@ export const StyledRewardsMainImage = styled.img `
   margin: auto;
 `;
 
-export const StyledRewardsCouponImageBox = styled.div `
+export const StyledRewardsCouponImageBox = styled.div`
   display: flex;
   align-items: center;
   margin: 2em 0;
@@ -75,11 +76,11 @@ export const StyledRewardsCouponImageBox = styled.div `
   }
 `;
 
-export const StyledRewardsCouponPerspective = styled.div `
+export const StyledRewardsCouponPerspective = styled.div`
   perspective: 900px;
 `;
 
-export const StyledRewardsCoupon = styled.div `
+export const StyledRewardsCoupon = styled.div`
   display: flex;
   flex-direction: column;
   background-color: ${({ theme }) => theme.colors.main};

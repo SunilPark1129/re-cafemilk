@@ -46,6 +46,9 @@ const StyledFooterSection = styled.section`
   &:nth-of-type(3) {
     flex: 0 0 20%;
   }
+  address {
+    color: ${({ theme }) => theme.colors.mild};
+  }
 
   @media (max-width: ${({ theme }) => theme.mobile}) {
     &:nth-of-type(1) {
@@ -98,7 +101,9 @@ const Footer = () => {
           <StyledFooterHeader>
             <h3>Contact</h3>
           </StyledFooterHeader>
-          <p>Rt-70 at South Washington Ave, Cherry Hill, NJ 08002</p>
+          <address>
+            Rt-70 at South Washington Ave, Cherry Hill, NJ 08002
+          </address>
           <p>609) 223-4532</p>
         </StyledFooterSection>
       </StyledFooterContainer>
