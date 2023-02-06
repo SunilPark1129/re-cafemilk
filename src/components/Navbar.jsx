@@ -36,35 +36,37 @@ const links = [
 
 const Navbar = () => {
   return (
-    <StyledNavbar>
-      <StyledNavbarContainer>
-        <Link to="/" title="CafeMilk">
-          <img src={logo} alt="cafemilk-logo" />
-        </Link>
-        <StyledNavbarLink>
-          {links.map(({ path, label, exect }) => {
-            return (
-              <li key={label}>
-                <NavLink
-                  to={path}
-                  exect={exect}
-                  className={({ isActive }) => (isActive ? "isActived" : "")}
-                >
-                  {label}
-                </NavLink>
-              </li>
-            );
-          })}
-        </StyledNavbarLink>
-        <StyledNavbarLocation
-          href="https://www.google.com"
-          target="_blank"
-          title="Google Map"
-        >
-          <FontAwesomeIcon icon={faLocationDot} />
-        </StyledNavbarLocation>
-      </StyledNavbarContainer>
-    </StyledNavbar>
+    <header>
+      <StyledNavbar>
+        <StyledNavbarContainer>
+          <Link to="/" title="CafeMilk">
+            <img src={logo} alt="cafemilk-logo" />
+          </Link>
+          <StyledNavbarLink>
+            {links.map(({ path, label, exect }) => {
+              return (
+                <li key={label}>
+                  <NavLink
+                    to={path}
+                    exect={exect}
+                    className={({ isActive }) => (isActive ? "isActived" : "")}
+                  >
+                    {label}
+                  </NavLink>
+                </li>
+              );
+            })}
+          </StyledNavbarLink>
+          <StyledNavbarLocation
+            href="https://www.google.com"
+            target="_blank"
+            title="Google Map"
+          >
+            <FontAwesomeIcon icon={faLocationDot} />
+          </StyledNavbarLocation>
+        </StyledNavbarContainer>
+      </StyledNavbar>
+    </header>
   );
 };
 
