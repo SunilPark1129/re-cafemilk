@@ -28,7 +28,7 @@ const StyledMenuContent = styled.section`
   }
 `;
 
-const StyledMenuContentTextBox = styled.section`
+const StyledMenuContentTextBox = styled.div`
   display: flex;
   flex-direction: column;
   gap: 0.5em;
@@ -76,7 +76,7 @@ const StyledMenuContentTextBox = styled.section`
   }
 `;
 
-const StyledMenuContentImageBox = styled.section`
+const StyledMenuContentImageBox = styled.div`
   outline: 2px solid ${({ theme }) => theme.colors.main};
   position: relative;
   border-radius: 1rem;
@@ -111,7 +111,7 @@ const StyledMenuContentImageBox = styled.section`
   }
 `;
 
-const StyledMenuContentClose = styled.section`
+const StyledMenuContentClose = styled.div`
   cursor: pointer;
   position: absolute;
   right: 1rem;

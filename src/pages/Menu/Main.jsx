@@ -73,7 +73,7 @@ const Main = ({ menu }) => {
           Object.getOwnPropertyNames(data).map((arr, idx) => {
             return (
               <StyledMenuSection key={arr}>
-                {menu[idx].length !== 0 ? <h1>{arr.toUpperCase()}</h1> : null}
+                {menu[idx].length !== 0 ? <h4>{arr.toUpperCase()}</h4> : null}
                 <StyledMenuCategory>
                   {menu[idx].map((item) => {
                     return (

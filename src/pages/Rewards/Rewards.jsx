@@ -10,10 +10,10 @@ import icedOrange from "../../assets/tea_iced_orange.png";
 import {
   StyledRewards,
   StyledRewardsHeader,
-  StyledRewardsMain,
-  StyledRewardsMainSection,
-  StyledRewardsMainTextBox,
-  StyledRewardsMainImage,
+  StyledRewardsArticle,
+  StyledRewardsArticleContent,
+  StyledRewardsArticleTextBox,
+  StyledRewardsArticleImage,
   StyledRewardsCouponPerspective,
   StyledRewardsCoupon,
   StyledRewardsCouponImageBox,
@@ -29,10 +29,10 @@ const Rewards = () => {
       <StyledRewardsHeader>
         <img src={headerImg} alt="three women are smiling" />
       </StyledRewardsHeader>
-      <StyledRewardsMain>
-        <StyledRewardsMainSection>
+      <StyledRewardsArticle>
+        <StyledRewardsArticleContent>
           <h1>THANK YOU</h1>
-          <StyledRewardsMainTextBox>
+          <StyledRewardsArticleTextBox>
             <p>
               Thank you for visiting our cafe. For you, our cafe has prepared a
               small gift. Check out what gifts we have now.
@@ -40,9 +40,9 @@ const Rewards = () => {
             <p>
               <span>*Some events may have an expiration date*</span>
             </p>
-          </StyledRewardsMainTextBox>
-        </StyledRewardsMainSection>
-        <StyledRewardsMainSection>
+          </StyledRewardsArticleTextBox>
+        </StyledRewardsArticleContent>
+        <StyledRewardsArticleContent>
           <h1>STAMP CARD</h1>
           <StyledRewardsCouponImageBox>
             <img src={icedOrange} alt="icedOrange" />
@@ -67,12 +67,12 @@ const Rewards = () => {
               </StyledRewardsCoupon>
             </StyledRewardsCouponPerspective>
           </StyledRewardsCouponImageBox>
-          <StyledRewardsMainTextBox>
+          <StyledRewardsArticleTextBox>
             <p>
               When you buy a drink, we will give you a stamp card. Then whenever
               you buy a drink, a stamp will be stamped on the card.
             </p>
-          </StyledRewardsMainTextBox>
+          </StyledRewardsArticleTextBox>
           <StyledRewardsCouponImageBox>
             <StyledRewardsCouponPerspective>
               <StyledRewardsCoupon>
@@ -96,7 +96,7 @@ const Rewards = () => {
             <p>&#10137;</p>
             <img src={icedOrange} alt="icedOrange" />
           </StyledRewardsCouponImageBox>
-          <StyledRewardsMainTextBox>
+          <StyledRewardsArticleTextBox>
             <p>
               If you collect 10 stamps, you will receive a drink of any size.
               Our stamp card has no expiration date, so you can use it at any
@@ -107,15 +107,15 @@ const Rewards = () => {
                 *You cannot get stamps for drinks obtained through events*
               </span>
             </p>
-          </StyledRewardsMainTextBox>
-        </StyledRewardsMainSection>
-        <StyledRewardsMainSection>
+          </StyledRewardsArticleTextBox>
+        </StyledRewardsArticleContent>
+        <StyledRewardsArticleContent>
           <h1>BIRTHDAY</h1>
-          <StyledRewardsMainImage
+          <StyledRewardsArticleImage
             src={birthdayImg}
             alt="woman is drinking a coffee"
           />
-          <StyledRewardsMainTextBox>
+          <StyledRewardsArticleTextBox>
             <p>
               Cafe Milk takes care of our customers' birthdays. Bring a license
               to prove your birthday on the day of your birthday. Once the proof
@@ -127,15 +127,15 @@ const Rewards = () => {
                 card*
               </span>
             </p>
-          </StyledRewardsMainTextBox>
-        </StyledRewardsMainSection>
-        <StyledRewardsMainSection>
+          </StyledRewardsArticleTextBox>
+        </StyledRewardsArticleContent>
+        <StyledRewardsArticleContent>
           <h1>GROUP</h1>
-          <StyledRewardsMainImage
+          <StyledRewardsArticleImage
             src={groupImg}
             alt="people are communicating at the table"
           />
-          <StyledRewardsMainTextBox>
+          <StyledRewardsArticleTextBox>
             <p>
               If you come in a group of 5 or more, you get one free drink! 5 or
               more people must visit the cafe and four of them must buy drinks
@@ -147,9 +147,9 @@ const Rewards = () => {
                 card*
               </span>
             </p>
-          </StyledRewardsMainTextBox>
-        </StyledRewardsMainSection>
-      </StyledRewardsMain>
+          </StyledRewardsArticleTextBox>
+        </StyledRewardsArticleContent>
+      </StyledRewardsArticle>
     </StyledRewards>
   );
 };

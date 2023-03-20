@@ -59,7 +59,7 @@ const Aside = ({ filter, setFilter, setMenu }) => {
 
   return (
     <StyledMenuAside>
-      <h3>FILTERS</h3>
+      <h4>FILTERS</h4>
 
       <StyledMenuAsideSection>
         {Object.getOwnPropertyNames(menuFilter).map((arr, idx) => {

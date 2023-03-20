@@ -67,7 +67,7 @@ const starAni = keyframes`
   }
 `;
 
-export const StyledHomeText = styled.article`
+export const StyledHomeText = styled.div`
   display: flex;
   flex-direction: column;
   flex: 1 1 40%;
@@ -75,7 +75,7 @@ export const StyledHomeText = styled.article`
   justify-content: center;
   gap: 1rem;
 
-  div {
+  > div {
     display: flex;
     gap: 0.5rem;
     align-items: center;

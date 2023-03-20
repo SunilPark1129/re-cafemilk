@@ -16,13 +16,13 @@ export const StyledMenuAside = styled.aside`
   padding: 1em;
   gap: 2rem;
 
-  h3 {
+  h4 {
     padding: 1rem 0;
   }
 
   @media (max-width: ${({ theme }) => theme.tablet}) {
     gap: 1rem;
-    h3 {
+    h4 {
       padding: 0;
       text-align: center;
     }
@@ -95,14 +95,14 @@ export const StyledMenuSection = styled.section`
   flex-direction: column;
   gap: 1em;
 
-  > h1 {
+  > h4 {
     font-size: 1.3em;
     position: relative;
     color: ${({ theme }) => theme.colors.darkFont};
   }
 `;
 
-export const StyledMenuCategory = styled.section`
+export const StyledMenuCategory = styled.div`
   display: flex;
   flex-wrap: wrap;
 `;
@@ -125,7 +125,7 @@ export const StyledMenuImage = styled.div`
   }
 `;
 
-export const StyledMenuItem = styled.article`
+export const StyledMenuItem = styled.div`
   flex: 1 1 40%;
   height: 8em;
   display: flex;

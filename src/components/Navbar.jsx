@@ -11,7 +11,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
 import {
   StyledNavbar,
-  StyledNavbarContainer,
+  StyledNavbarWrapper,
   StyledNavbarLink,
   StyledNavbarLocation,
 } from "./styles/Navbar.styled";
@@ -38,7 +38,7 @@ const Navbar = () => {
   return (
     <header>
       <StyledNavbar>
-        <StyledNavbarContainer>
+        <StyledNavbarWrapper>
           <Link to="/" title="CafeMilk">
             <img src={logo} alt="cafemilk-logo" />
           </Link>
@@ -64,7 +64,7 @@ const Navbar = () => {
           >
             <FontAwesomeIcon icon={faLocationDot} />
           </StyledNavbarLocation>
-        </StyledNavbarContainer>
+        </StyledNavbarWrapper>
       </StyledNavbar>
     </header>
   );

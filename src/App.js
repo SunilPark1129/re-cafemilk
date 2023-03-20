@@ -8,7 +8,7 @@ import Home from "./pages/Home/Home";
 import Menu from "./pages/Menu/Menu";
 import Rewards from "./pages/Rewards/Rewards";
 import Footer from "./components/Footer";
-import { StyledContainer } from "./components/styles/Container.styled";
+import { StyledWrapper } from "./components/styles/Wrapper.styled";
 
 function App() {
   return (
@@ -16,13 +16,13 @@ function App() {
       <GlobalStyles />
       <Router>
         <Navbar />
-        <StyledContainer>
+        <StyledWrapper>
           <Routes>
             <Route exact path="/" element={<Home />} />
             <Route exact path="/menu" element={<Menu />} />
             <Route exact path="/rewards" element={<Rewards />} />
           </Routes>
-        </StyledContainer>
+        </StyledWrapper>
         <Footer />
       </Router>
     </ThemeProvider>

@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import { StyledContainer } from "./Container.styled";
+import { StyledWrapper } from "./Wrapper.styled";
 
-export const StyledNavbar = styled.nav `
+export const StyledNavbar = styled.nav`
   box-shadow: 0px 10px 5px -5px ${({ theme }) => theme.colors.shadow};
   background-color: ${({ theme }) => theme.colors.light};
   z-index: 999;
@@ -10,8 +10,7 @@ export const StyledNavbar = styled.nav `
   }
 `;
 
-export const StyledNavbarContainer = styled(StyledContainer)
-`
+export const StyledNavbarWrapper = styled(StyledWrapper)`
   display: flex;
   height: 6em;
   padding: 1rem;
@@ -19,7 +18,7 @@ export const StyledNavbarContainer = styled(StyledContainer)
   gap: 1rem;
 `;
 
-export const StyledNavbarLink = styled.ul `
+export const StyledNavbarLink = styled.ul`
   display: flex;
   gap: 1rem;
 
@@ -39,7 +38,7 @@ export const StyledNavbarLink = styled.ul `
   }
 `;
 
-export const StyledNavbarLocation = styled.a `
+export const StyledNavbarLocation = styled.a`
   display: flex;
   justify-content: center;
   align-items: center;
