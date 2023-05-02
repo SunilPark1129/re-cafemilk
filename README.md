@@ -5,7 +5,7 @@ Go to website - [Link](https://sp-cafemilk.netlify.app)
 
 ## Project Description
 
-- Cafe Milk, a cafe.
+- Providing ingredients and events for coffee shop.
 
 ## Features
 > Features that I would like to introduce.
