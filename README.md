@@ -1,7 +1,8 @@
 # Cafe Mlik
 ![cafemilk](https://user-images.githubusercontent.com/106734133/209862707-de6ed793-557c-44f5-871d-7fabc4013247.jpg)
 
-Go to website - [Link](https://sp-cafemilk.netlify.app)
+Go to website - [Link](https://sp-cafemilk.netlify.app)<br>
+Go to old website -[Link](https://github.com/SunilPark1129/cafe-milk)
 
 ## Project Description
 
