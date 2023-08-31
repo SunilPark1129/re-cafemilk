@@ -28,28 +28,26 @@ const Rewards = () => {
     <StyledRewards>
       <StyledRewardsHeader>
         <img src={headerImg} alt="three women are smiling" />
+        <h1>THANK YOU</h1>
+        <StyledRewardsArticleTextBox>
+          <p>
+            Thank you for visiting our cafe. For you, our cafe has prepared a
+            small gift. Check out what gifts we have now.
+          </p>
+          <p>
+            <span>*Some events may have an expiration date*</span>
+          </p>
+        </StyledRewardsArticleTextBox>
       </StyledRewardsHeader>
       <StyledRewardsArticle>
         <StyledRewardsArticleContent>
-          <h1>THANK YOU</h1>
-          <StyledRewardsArticleTextBox>
-            <p>
-              Thank you for visiting our cafe. For you, our cafe has prepared a
-              small gift. Check out what gifts we have now.
-            </p>
-            <p>
-              <span>*Some events may have an expiration date*</span>
-            </p>
-          </StyledRewardsArticleTextBox>
-        </StyledRewardsArticleContent>
-        <StyledRewardsArticleContent>
-          <h1>STAMP CARD</h1>
+          <h2>STAMP CARD</h2>
           <StyledRewardsCouponImageBox>
             <img src={icedOrange} alt="icedOrange" />
             <p>&#10137;</p>
             <StyledRewardsCouponPerspective>
               <StyledRewardsCoupon>
-                <h4>CAFEMILK STAMP CARD</h4>
+                <p className="card-title">CAFEMILK STAMP CARD</p>
                 <div>
                   <span className="logo" />
                   <span></span>
@@ -62,7 +60,9 @@ const Rewards = () => {
                   <span></span>
                   <span></span>
                 </div>
-                <p>Rt-70 at South Washington Ave, Cherry Hill, NJ</p>
+                <p className="card-address">
+                  Rt-70 at South Washington Ave, Cherry Hill, NJ
+                </p>
                 <span></span>
               </StyledRewardsCoupon>
             </StyledRewardsCouponPerspective>
@@ -76,7 +76,7 @@ const Rewards = () => {
           <StyledRewardsCouponImageBox>
             <StyledRewardsCouponPerspective>
               <StyledRewardsCoupon>
-                <h4>CAFEMILK STAMP CARD</h4>
+                <p className="card-title">CAFEMILK STAMP CARD</p>
                 <div>
                   <span className="logo" />
                   <span className="logo" />
@@ -89,7 +89,9 @@ const Rewards = () => {
                   <span className="logo" />
                   <span className="logo" />
                 </div>
-                <p>Rt-70 at South Washington Ave, Cherry Hill, NJ</p>
+                <p className="card-address">
+                  Rt-70 at South Washington Ave, Cherry Hill, NJ
+                </p>
                 <span></span>
               </StyledRewardsCoupon>
             </StyledRewardsCouponPerspective>
@@ -110,7 +112,7 @@ const Rewards = () => {
           </StyledRewardsArticleTextBox>
         </StyledRewardsArticleContent>
         <StyledRewardsArticleContent>
-          <h1>BIRTHDAY</h1>
+          <h2>BIRTHDAY</h2>
           <StyledRewardsArticleImage
             src={birthdayImg}
             alt="woman is drinking a coffee"
@@ -130,7 +132,7 @@ const Rewards = () => {
           </StyledRewardsArticleTextBox>
         </StyledRewardsArticleContent>
         <StyledRewardsArticleContent>
-          <h1>GROUP</h1>
+          <h2>GROUP</h2>
           <StyledRewardsArticleImage
             src={groupImg}
             alt="people are communicating at the table"

@@ -9,7 +9,7 @@ import React, { useEffect } from "react";
 import { obj, lists } from "../../data/data";
 import {
   StyledMenuAside,
-  StyledMenuAsideSection,
+  StyledMenuAsideCategory,
   StyledMenuAsideFilter,
 } from "../../components/styles/Menu.styled";
 
@@ -59,13 +59,11 @@ const Aside = ({ filter, setFilter, setMenu }) => {
 
   return (
     <StyledMenuAside>
-      <h4>FILTERS</h4>
-
-      <StyledMenuAsideSection>
+      <StyledMenuAsideCategory>
         {Object.getOwnPropertyNames(menuFilter).map((arr, idx) => {
           return (
             <StyledMenuAsideFilter key={arr}>
-              <h4>{arr.toUpperCase()}</h4>
+              <p>{arr.toUpperCase()}</p>
               {Object.getOwnPropertyNames(menuFilter[arr]).map((item) => {
                 return (
                   <button
@@ -88,7 +86,7 @@ const Aside = ({ filter, setFilter, setMenu }) => {
             </StyledMenuAsideFilter>
           );
         })}
-      </StyledMenuAsideSection>
+      </StyledMenuAsideCategory>
     </StyledMenuAside>
   );
 };

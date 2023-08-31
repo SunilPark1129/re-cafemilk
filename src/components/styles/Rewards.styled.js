@@ -4,14 +4,39 @@ import logo from "../../assets/logo.png";
 export const StyledRewards = styled.main`
   display: flex;
   flex-direction: column;
+  gap: 2em;
 `;
 
-export const StyledRewardsHeader = styled.header`
+export const StyledRewardsHeader = styled.div`
   z-index: -1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 2em;
+  padding-bottom: 2em;
+  box-shadow: 0px 5px 3px -3px ${({ theme }) => theme.colors.shadow};
+
   img {
     width: 100%;
     height: 30rem;
     object-fit: cover;
+  }
+
+  h1 {
+    margin: auto;
+    border-bottom: 2px solid ${({ theme }) => theme.colors.main};
+    font-size: 1.2em;
+  }
+
+  span {
+    color: red;
+  }
+
+  @media (max-width: ${({ theme }) => theme.tablet}) {
+    img {
+      height: 20rem;
+    }
   }
 `;
 
@@ -28,7 +53,7 @@ export const StyledRewardsArticleContent = styled.section`
   padding: 3rem 0;
   border-bottom: 1px dotted ${({ theme }) => theme.colors.mild};
 
-  h1 {
+  h2 {
     margin: auto;
     border-bottom: 2px solid ${({ theme }) => theme.colors.main};
     font-size: 1.2em;
@@ -92,12 +117,12 @@ export const StyledRewardsCoupon = styled.div`
   height: 9em;
   justify-content: center;
 
-  h4 {
+  .card-title {
     font-size: 0.8em;
     text-align: center;
   }
 
-  p {
+  .card-address {
     font-size: 0.6em;
     text-align: center;
     color: ${({ theme }) => theme.colors.shadow};

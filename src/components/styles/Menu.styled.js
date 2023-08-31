@@ -14,25 +14,26 @@ export const StyledMenuAside = styled.aside`
   flex-direction: column;
   flex: 1 1 10%;
   padding: 1em;
-  gap: 2rem;
+  box-shadow: 5px 0px 3px -2px ${({ theme }) => theme.colors.shadow};
 
-  h4 {
+  p {
     padding: 1rem 0;
+    font-weight: bold;
   }
 
   @media (max-width: ${({ theme }) => theme.tablet}) {
-    gap: 1rem;
-    h4 {
+    box-shadow: 0px 5px 3px -2px ${({ theme }) => theme.colors.shadow};
+    p {
       padding: 0;
       text-align: center;
     }
   }
 `;
 
-export const StyledMenuAsideSection = styled.section`
+export const StyledMenuAsideCategory = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 3rem;
+  gap: 2rem;
 
   @media (max-width: ${({ theme }) => theme.tablet}) {
     gap: 1em;
@@ -43,6 +44,7 @@ export const StyledMenuAsideFilter = styled.div`
   display: flex;
   flex-direction: column;
   gap: 0.5em;
+  padding-bottom: 1em;
 
   button {
     border: none;
@@ -50,6 +52,7 @@ export const StyledMenuAsideFilter = styled.div`
     font-weight: bold;
     padding: 0.2rem 0.5rem;
     border-radius: 0.2rem;
+    background-color: #dfdfdf;
     color: ${({ theme }) => theme.colors.btnFont};
     cursor: pointer;
     transition-property: background-color, color;
@@ -66,17 +69,17 @@ export const StyledMenuAsideFilter = styled.div`
   @media (max-width: ${({ theme }) => theme.tablet}) {
     flex-direction: row;
     flex-wrap: wrap;
-    h4 {
+    justify-content: center;
+    p {
       flex: 1 1 100%;
     }
     button {
       margin: 0;
-      transition-duration: 0.3s, 0.3s;
     }
   }
 `;
 
-export const StyledMenuMain = styled.main`
+export const StyledMenuPage = styled.article`
   display: flex;
   flex-direction: column;
   flex: 1 1 70%;
@@ -90,7 +93,17 @@ export const StyledMenuMain = styled.main`
   }
 `;
 
-export const StyledMenuSection = styled.section`
+export const StyledMenuHeader = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  color: ${({ theme }) => theme.colors.darkFont};
+  padding: 2em;
+  background-color: ${({ theme }) => theme.colors.main};
+  border-radius: 4px;
+`;
+
+export const StyledMenuCategory = styled.div`
   display: flex;
   flex-direction: column;
   gap: 1em;
@@ -102,9 +115,11 @@ export const StyledMenuSection = styled.section`
   }
 `;
 
-export const StyledMenuCategory = styled.div`
+export const StyleMenuItems = styled.div`
   display: flex;
   flex-wrap: wrap;
+  border-radius: 4px;
+  gap: 0.4em;
 `;
 
 export const StyledMenuImage = styled.div`
@@ -114,7 +129,7 @@ export const StyledMenuImage = styled.div`
   overflow: hidden;
   border-radius: 50%;
   justify-content: center;
-  background-color: #c0a49c;
+  background-color: ${({ theme }) => theme.colors.mild};
 
   img {
     height: 130%;
@@ -134,13 +149,14 @@ export const StyledMenuItem = styled.div`
   gap: 2em;
   border-radius: 0.5em;
   cursor: pointer;
+  background-color: #dfdfdf;
 
   p {
     font-weight: bold;
   }
 
   &:hover {
-    outline: 1px solid ${({ theme }) => theme.colors.mild};
+    background-color: ${({ theme }) => theme.colors.light};
 
     ${StyledMenuImage} {
       img {
@@ -158,7 +174,7 @@ export const StyledMenuMargin = styled.div`
   flex: 1 1 40%;
 `;
 
-export const StyledMenuMainArrayEmpty = styled.div`
+export const StyledMenuPageArrayEmpty = styled.div`
   width: 100%;
   margin: auto;
   display: flex;

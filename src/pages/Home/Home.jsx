@@ -40,7 +40,7 @@ const Home = () => {
   // useObserver( option, scroll position, reuse this event )
   const layout = [
     {
-      header: "MENU",
+      title: "MENU",
       description:
         "Try a variety of drinks! Find a drink that suits your taste from the menu.",
       link: true,
@@ -50,7 +50,7 @@ const Home = () => {
       isVisible: useObserver(observerOption, menuPos, true),
     },
     {
-      header: "REWARDS",
+      title: "REWARDS",
       description:
         "You can use the reward system to receive benefits. Click the link for more information.",
       link: true,
@@ -60,7 +60,7 @@ const Home = () => {
       isVisible: useObserver(observerOption, rewardsPos, true),
     },
     {
-      header: "EVENT",
+      title: "EVENT",
       description:
         "Is your birthday coming up? Bring a license to prove your birthday and we'll give you a free drink in any size.",
       link: false,
@@ -69,7 +69,7 @@ const Home = () => {
       isVisible: useObserver(observerOption, eventPos, true),
     },
     {
-      header: "HIRING",
+      title: "HIRING",
       description:
         "Now we are hiring! We are looking for enthusiastic and friendly employees. Please visit our cafe for an interview.",
       link: false,
@@ -85,12 +85,12 @@ const Home = () => {
         <img src={imgHeader} alt="inside of the cafe" />
       </StyledHomeHeader>
       {layout.map(
-        ({ header, description, link, image, path, target, isVisible }) => {
+        ({ title, description, link, image, path, target, isVisible }) => {
           return (
-            <StyledHomeSection key={header}>
+            <StyledHomeSection key={title}>
               <StyledHomeText>
                 <div ref={target}>
-                  <h1>{header}</h1>
+                  <h1>{title}</h1>
                   <span className={isVisible ? "visible" : ""}>
                     <FontAwesomeIcon icon={faStar} />
                   </span>
@@ -99,7 +99,7 @@ const Home = () => {
                 {link ? <Link to={path}>LINK</Link> : null}
               </StyledHomeText>
               <StyledHomeImage>
-                <img src={image} alt={header} />
+                <img src={image} alt={title} />
               </StyledHomeImage>
             </StyledHomeSection>
           );

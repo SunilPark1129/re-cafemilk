@@ -9,13 +9,14 @@ import React, { useState, useEffect } from "react";
 import { lists } from "../../data/data";
 import Content from "./Content";
 import {
-  StyledMenuMain,
-  StyledMenuSection,
+  StyledMenuPage,
   StyledMenuCategory,
+  StyleMenuItems,
   StyledMenuItem,
   StyledMenuImage,
-  StyledMenuMainArrayEmpty,
+  StyledMenuPageArrayEmpty,
   StyledMenuMargin,
+  StyledMenuHeader,
 } from "../../components/styles/Menu.styled";
 
 const Main = ({ menu }) => {
@@ -29,17 +30,16 @@ const Main = ({ menu }) => {
 
   useEffect(() => {
     window.scrollTo(0, 0);
-    // boolean true = empty, false = has drinks
-    let bool = true;
+    let isDrinkListEmpty = true;
 
     // Check if a drink is on the array.
     for (let idx in menu) {
       if (menu[idx].length !== 0) {
-        bool = false;
+        isDrinkListEmpty = false;
       }
     }
 
-    if (bool) {
+    if (isDrinkListEmpty) {
       setArrayEmpty(true);
     }
 
@@ -49,7 +49,11 @@ const Main = ({ menu }) => {
   }, [menu]);
 
   return (
-    <StyledMenuMain>
+    <StyledMenuPage>
+      <StyledMenuHeader>
+        <h1>Pick your drink</h1>
+        <p>Choose your favorite drink and check out the ingredients inside.</p>
+      </StyledMenuHeader>
       {/*
       When the user clicks on the drink, the value is put into selectedItem.
       Closing the content sets the value of selectedItem back to null.
@@ -63,18 +67,18 @@ const Main = ({ menu }) => {
 
       {menu !== null ? (
         arrayEmpty ? (
-          <StyledMenuMainArrayEmpty>
+          <StyledMenuPageArrayEmpty>
             <h4>The drink you selected from the options is not on the list.</h4>
             <p>Find another drink other than the one you selected.</p>
             <p>We also make other drinks that are delicious!</p>
             <p>We will try to create more diverse and delicious drinks.</p>
-          </StyledMenuMainArrayEmpty>
+          </StyledMenuPageArrayEmpty>
         ) : (
           Object.getOwnPropertyNames(data).map((arr, idx) => {
             return (
-              <StyledMenuSection key={arr}>
+              <StyledMenuCategory key={arr}>
                 {menu[idx].length !== 0 ? <h4>{arr.toUpperCase()}</h4> : null}
-                <StyledMenuCategory>
+                <StyleMenuItems>
                   {menu[idx].map((item) => {
                     return (
                       <StyledMenuItem
@@ -89,13 +93,13 @@ const Main = ({ menu }) => {
                     );
                   })}
                   <StyledMenuMargin></StyledMenuMargin>
-                </StyledMenuCategory>
-              </StyledMenuSection>
+                </StyleMenuItems>
+              </StyledMenuCategory>
             );
           })
         )
       ) : null}
-    </StyledMenuMain>
+    </StyledMenuPage>
   );
 };
 
