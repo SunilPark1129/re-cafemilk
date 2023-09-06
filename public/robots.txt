@@ -2,4 +2,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://example.com/sitemap.xml
+Sitemap: https://sp-cafemilk.netlify.app/sitemap.xml
