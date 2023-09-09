@@ -7,6 +7,8 @@ export const StyledMenuContent = styled.section`
   align-items: center;
   padding: 6rem;
   border: 2px solid ${({ theme }) => theme.colors.mild};
+  margin-top: 1.5em;
+  border-radius: 8px;
 
   @media (max-width: ${({ theme }) => theme.tablet}) {
     padding: 3rem;
@@ -88,7 +90,7 @@ export const StyledMenuContentImageBox = styled.div`
     background: linear-gradient(
       to top,
       ${({ theme }) => theme.colors.light} 10%,
-      ${({ theme }) => theme.colors.main} 90%
+      #b1a5a5 90%
     );
     border-radius: 1rem;
     z-index: -1;

@@ -61,7 +61,7 @@ export const StyledMenuAsideFilter = styled.div`
     &:hover,
     &.isActive {
       color: white;
-      background-color: ${({ theme }) => theme.colors.mild};
+      background-color: ${({ theme }) => theme.colors.main};
     }
   }
 
@@ -84,7 +84,6 @@ export const StyledMenuPage = styled.article`
   padding: 2rem 1rem;
   margin-bottom: 2rem;
   min-height: 100vh;
-  gap: 3em;
 
   @media (max-width: ${({ theme }) => theme.tablet}) {
     padding: 1rem 0;
@@ -97,7 +96,7 @@ export const StyledMenuHeader = styled.div`
   gap: 1em;
   color: ${({ theme }) => theme.colors.darkFont};
   padding: 2em;
-  background-color: ${({ theme }) => theme.colors.main};
+  background-color: ${({ theme }) => theme.colors.mild};
   border-radius: 4px;
 `;
 
@@ -105,8 +104,8 @@ export const StyledMenuCategory = styled.div`
   display: flex;
   flex-direction: column;
   gap: 1em;
-
   > h4 {
+    padding-top: 1em;
     font-size: 1.3em;
     position: relative;
     color: ${({ theme }) => theme.colors.darkFont};
@@ -127,7 +126,7 @@ export const StyledMenuImage = styled.div`
   overflow: hidden;
   border-radius: 50%;
   justify-content: center;
-  background-color: ${({ theme }) => theme.colors.mild};
+  background-color: #b1a5a5;
 
   img {
     height: 130%;
@@ -148,6 +147,7 @@ export const StyledMenuItem = styled.div`
   border-radius: 0.5em;
   cursor: pointer;
   background-color: #dfdfdf;
+  transition: background-color 0.3s;
 
   p {
     font-weight: bold;
@@ -155,6 +155,9 @@ export const StyledMenuItem = styled.div`
 
   &:hover {
     background-color: ${({ theme }) => theme.colors.light};
+    > div {
+      background-color: ${({ theme }) => theme.colors.mild};
+    }
 
     ${StyledMenuImage} {
       img {
