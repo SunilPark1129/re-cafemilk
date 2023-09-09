@@ -9,6 +9,7 @@ import React, { useState } from "react";
 import Aside from "./Aside";
 import Main from "./Main";
 import { StyledMenu } from "../../components/styles/Menu.styled";
+import { useEffect } from "react";
 
 const Menu = () => {
   const [filter, setFilter] = useState({
@@ -16,6 +17,9 @@ const Menu = () => {
     taste: "all",
     sort: "all",
   });
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   // This will display the drink (array).
   // Receiving the data from the Aside component.
