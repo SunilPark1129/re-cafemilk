@@ -22,10 +22,9 @@ export const StyledMenuAside = styled.aside`
   }
 
   @media (max-width: ${({ theme }) => theme.tablet}) {
-    box-shadow: 0px 5px 3px -2px ${({ theme }) => theme.colors.shadow};
+    box-shadow: 0px 5px 3px -2px transparent;
     p {
       padding: 0;
-      text-align: center;
     }
   }
 `;
@@ -69,7 +68,6 @@ export const StyledMenuAsideFilter = styled.div`
   @media (max-width: ${({ theme }) => theme.tablet}) {
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
     p {
       flex: 1 1 100%;
     }
