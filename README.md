@@ -6,14 +6,14 @@ Go to old website -[Link](https://github.com/SunilPark1129/cafe-milk)
 
 ## Project Description
 
-- The Cafe Milk website provides information on various drinks and provides information on events and announcements about Cafe Milk.
+- At CafeMilk, you can explore a variety of flavors in coffee, bubble tea, smoothies, and tea. It also offer ongoing events.
 
 ## Features
 > Features that I would like to introduce.
 
 |Feature|Description|
 |:--:|:--|
-|Resposive|<img src="https://user-images.githubusercontent.com/106734133/209862823-2954208e-0e86-4a4a-ae5a-7bc847570c25.jpg" height="400"><br><br>This website works with any window sizes. It is divided into mobile size, tablet size, and desktop size.|
+|Resposive|<img src="https://user-images.githubusercontent.com/106734133/209862823-2954208e-0e86-4a4a-ae5a-7bc847570c25.jpg" height="400"><br><br>This website works with any devices. It is divided into mobile size, tablet size, and desktop size.|
 |useObserver|<img src="https://user-images.githubusercontent.com/106734133/209863002-49ecf021-ecdb-46f9-9c99-9fa6b5f86970.jpg" height="400"><br><br>When a user's screen reaches a section, a star icon responds.|
 |Menu|<img src="https://user-images.githubusercontent.com/106734133/209863160-d63c6570-4616-4cd3-ad34-f355140e49af.jpg"><br><br>This is a menu for choosing a drink. Hover to see some basic animation effects.|
 |Selected Item|<img src="https://user-images.githubusercontent.com/106734133/209863231-86a0e195-fe78-40fc-b036-11bee1a338ba.jpg"><br><br>When a drink is clicked, the information about that drink will be displayed.|
