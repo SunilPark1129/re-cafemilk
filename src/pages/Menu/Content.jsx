@@ -5,7 +5,7 @@ Purpose: Displays information about the selected beverage in Main.jsx.
 Developer: Sunil Park
 */
 
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faClose } from "@fortawesome/free-solid-svg-icons";
 import {
@@ -16,15 +16,16 @@ import {
 } from "../../components/styles/Content.styled";
 
 const Content = ({ selectedItem, setSelectedItem }) => {
+  const contentRef = useRef();
   useEffect(() => {
-    window.scrollTo(0, 0);
+    window.scrollTo(0, contentRef.current.offsetTop - 30);
   }, [selectedItem]);
 
   function closeClickHandler() {
     setSelectedItem(null);
   }
   return (
-    <StyledMenuContent>
+    <StyledMenuContent ref={contentRef}>
       <StyledMenuContentTextBox>
         <h3>{selectedItem.name}</h3>
         <p>{selectedItem.description}</p>
