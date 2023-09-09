@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const StyledMenu = styled.main`
   display: flex;
-  gap: 1rem;
 
   @media (max-width: ${({ theme }) => theme.tablet}) {
     flex-direction: column;
@@ -43,7 +42,6 @@ export const StyledMenuAsideFilter = styled.div`
   display: flex;
   flex-direction: column;
   gap: 0.5em;
-  padding-bottom: 1em;
 
   button {
     border: none;
@@ -86,7 +84,7 @@ export const StyledMenuPage = styled.article`
   min-height: 100vh;
 
   @media (max-width: ${({ theme }) => theme.tablet}) {
-    padding: 1rem 0;
+    padding: 0;
   }
 `;
 
