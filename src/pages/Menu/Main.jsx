@@ -29,7 +29,6 @@ const Main = ({ menu }) => {
   const [selectedItem, setSelectedItem] = useState(null);
 
   useEffect(() => {
-    window.scrollTo(0, 0);
     let isDrinkListEmpty = true;
 
     // Check if a drink is on the array.
