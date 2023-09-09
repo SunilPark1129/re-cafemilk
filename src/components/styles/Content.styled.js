@@ -26,12 +26,12 @@ export const StyledMenuContentTextBox = styled.div`
 
   h3 {
     font-size: 1.6em;
-    border-bottom: 2px solid ${({ theme }) => theme.colors.main};
+    border-bottom: 2px solid ${({ theme }) => theme.colors.mild};
   }
 
   span {
     font-weight: bold;
-    background-color: ${({ theme }) => theme.colors.main};
+    background-color: ${({ theme }) => theme.colors.mild};
     padding: 0.2rem 0.5rem;
     border-radius: 0.2rem;
     color: white;
@@ -55,8 +55,8 @@ export const StyledMenuContentTextBox = styled.div`
       border-bottom: none;
     }
     > p {
-      padding: 0.3rem;
-      padding-right: 3px;
+      padding: 0.5rem 0;
+      padding-right: 0.3rem;
     }
 
     > div {
@@ -67,7 +67,7 @@ export const StyledMenuContentTextBox = styled.div`
 `;
 
 export const StyledMenuContentImageBox = styled.div`
-  outline: 2px solid ${({ theme }) => theme.colors.main};
+  outline: 2px solid ${({ theme }) => theme.colors.mild};
   position: relative;
   border-radius: 1rem;
   height: 10rem;
