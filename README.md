@@ -47,7 +47,7 @@ So I updated the old website with reference to this note for self-development. M
 
 - [x] I had trouble deciding on a class name. I feel the need to further consider and improve naming practices.
   - Elements are written with related names to indicate what they mean. I've been studying a lot, but I think I still need to study more.
-- [x] I need to pay more attention to css styling to develop myself. For example, I need to add more animation effect elements.
+- [x] I need to pay more attention to CSS styling to develop myself. For example, I need to add more animation effect elements.
   - I studied a lot of CSS effects such as animation. However, I did not add them because they are not necessary for this website.
 (Functions that can be rendered are divided into different file).
 
