@@ -10,6 +10,8 @@ import { Link } from "react-router-dom";
 import {
   StyledHome,
   StyledHomeHeader,
+  StyledHomeHeaderParagraph,
+  StyledHomeList,
   StyledHomeSection,
   StyledHomeText,
   StyledHomeImage,
@@ -83,28 +85,41 @@ const Home = () => {
     <StyledHome>
       <StyledHomeHeader>
         <img src={imgHeader} alt="inside of the cafe" />
+        <StyledHomeHeaderParagraph>
+          <h1>Welcome to our Cafemilk</h1>
+          <p>
+            We offer a variety of beverages and events. Take your time to
+            explore the services we can provide for you.
+          </p>
+        </StyledHomeHeaderParagraph>
       </StyledHomeHeader>
-      {layout.map(
-        ({ title, description, link, image, path, target, isVisible }) => {
-          return (
-            <StyledHomeSection key={title}>
-              <StyledHomeText>
-                <div ref={target}>
-                  <h1>{title}</h1>
-                  <span className={isVisible ? "visible" : ""}>
-                    <FontAwesomeIcon icon={faStar} />
-                  </span>
-                </div>
-                <p>{description}</p>
-                {link ? <Link to={path}>LINK</Link> : null}
-              </StyledHomeText>
-              <StyledHomeImage>
-                <img src={image} alt={title} />
-              </StyledHomeImage>
-            </StyledHomeSection>
-          );
-        }
-      )}
+      <StyledHomeList>
+        {layout.map(
+          ({ title, description, link, image, path, target, isVisible }) => {
+            return (
+              <StyledHomeSection key={title}>
+                <StyledHomeText>
+                  <div ref={target}>
+                    <h2>{title}</h2>
+                    <span className={isVisible ? "visible" : ""}>
+                      <FontAwesomeIcon icon={faStar} />
+                    </span>
+                  </div>
+                  <p>{description}</p>
+                  {link ? <Link to={path}>LINK</Link> : null}
+                </StyledHomeText>
+                <StyledHomeImage>
+                  <img
+                    className={`${isVisible && "visible"}`}
+                    src={image}
+                    alt={title}
+                  />
+                </StyledHomeImage>
+              </StyledHomeSection>
+            );
+          }
+        )}
+      </StyledHomeList>
     </StyledHome>
   );
 };

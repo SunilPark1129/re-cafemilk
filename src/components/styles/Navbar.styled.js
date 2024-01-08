@@ -5,6 +5,7 @@ export const StyledNavbar = styled.nav`
   box-shadow: 0px 10px 5px -5px ${({ theme }) => theme.colors.shadow};
   background-color: ${({ theme }) => theme.colors.light};
   z-index: 999;
+  position: relative;
   img {
     width: 5em;
   }
