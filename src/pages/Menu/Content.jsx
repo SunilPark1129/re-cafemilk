@@ -18,7 +18,7 @@ import {
 const Content = ({ selectedItem, setSelectedItem }) => {
   const contentRef = useRef();
   useEffect(() => {
-    window.scrollTo(0, contentRef.current.offsetTop - 15);
+    window.scrollTo(0, 0);
   }, [selectedItem]);
 
   function closeClickHandler() {

@@ -9,6 +9,7 @@ export const StyledMenuContent = styled.section`
   border: 2px solid ${({ theme }) => theme.colors.mild};
   margin-top: 1.5em;
   border-radius: 8px;
+  background-color: #fff;
 
   @media (max-width: ${({ theme }) => theme.tablet}) {
     padding: 3rem;

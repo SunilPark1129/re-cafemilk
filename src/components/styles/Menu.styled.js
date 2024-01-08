@@ -11,17 +11,14 @@ export const StyledMenu = styled.main`
 export const StyledMenuAside = styled.aside`
   display: flex;
   flex-direction: column;
-  flex: 1 1 10%;
-  padding: 1em;
-  box-shadow: 5px 0px 3px -2px ${({ theme }) => theme.colors.shadow};
+  flex: 1 1 20%;
+  padding: 2em;
 
   p {
-    padding: 1rem 0;
     font-weight: bold;
   }
 
   @media (max-width: ${({ theme }) => theme.tablet}) {
-    box-shadow: 0px 5px 3px -2px transparent;
     p {
       padding: 0;
     }
@@ -32,7 +29,8 @@ export const StyledMenuAsideCategory = styled.div`
   display: flex;
   flex-direction: column;
   gap: 2rem;
-
+  position: sticky;
+  top: 2rem;
   @media (max-width: ${({ theme }) => theme.tablet}) {
     gap: 1em;
   }
@@ -47,7 +45,7 @@ export const StyledMenuAsideFilter = styled.div`
     border: none;
     font-size: 1em;
     font-weight: bold;
-    padding: 0.2rem 0.5rem;
+    padding: 0.5rem;
     border-radius: 0.2rem;
     background-color: #dfdfdf;
     color: ${({ theme }) => theme.colors.btnFont};
@@ -92,9 +90,9 @@ export const StyledMenuHeader = styled.div`
   display: flex;
   flex-direction: column;
   gap: 1em;
-  color: ${({ theme }) => theme.colors.darkFont};
+  color: #474747;
   padding: 2em;
-  background-color: ${({ theme }) => theme.colors.mild};
+  border: 2px solid #cfcfcf;
   border-radius: 4px;
 `;
 
@@ -144,14 +142,15 @@ export const StyledMenuItem = styled.div`
   gap: 2em;
   border-radius: 0.5em;
   cursor: pointer;
-  background-color: #dfdfdf;
+  background-color: #dadada;
   transition: background-color 0.3s;
-
+  border: 1px solid transparent;
   p {
     font-weight: bold;
   }
 
   &:hover {
+    border: 1px solid #dfdfdf;
     background-color: ${({ theme }) => theme.colors.light};
     > div {
       background-color: ${({ theme }) => theme.colors.mild};
